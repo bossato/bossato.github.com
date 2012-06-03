@@ -1,0 +1,21 @@
+.fs40 {
+	font-size: 40px;
+}
+.fs30 {
+	font-size: 30px;
+}
+.fs20 {
+	font-size: 20px;
+}
+.fs10 {
+	font-size: 10px;
+}
+pre {
+	white-space: pre-wrap;
+	border: solid 1px black;
+	padding: 5px;
+	background: white;
+	color: black;
+	margin: 10px;
+	font-size:20px;
+}

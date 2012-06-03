@@ -1,0 +1,842 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>jQuery Mobileを触ってみた</title> 
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="../resource/css/jquery.mobile.pagination.css">
+	<link rel="stylesheet" href="../resource/css/style.css">
+	<link rel="stylesheet/less" type="text/css" href="../resource/css/style.less">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="../resource/js/jquery.mobile.pagination.js"></script>
+	<script type="text/javascript" src="../resource/js/less-1.3.0.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		});
+	</script>
+</head>
+<body>
+
+<div id="p1" data-role="page">
+	<div data-role="header">
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p2" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-next"><a href="#p2">Next</a></li>  
+		</ul>
+		
+		<div align="center">
+			<h1 class="fs40">jQuery Mobile<br />を触ってみた</h1>
+			<h2 class="fs20">Kazuya Sato</h2>
+			<h3>2012/06/04</h3>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p2" data-role="page">
+	<div data-role="header">
+		<a href="#p1" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p3" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p1">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p3">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs40">目次</h3>
+			<ol data-role="listview" data-inset="true">
+                <li data-role="list-divider">一覧</li>
+                <li class="fs40">jQuery Mobileの紹介</li>
+                <li class="fs40">jQuery Mobileの使い方</li>
+                <li class="fs40">Tipsとか注意点とか</li>
+            </ol>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p3" data-role="page">
+	<div data-role="header">
+		<a href="#p2" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p4" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p2">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p4">Next</a></li>
+		</ul>
+		<div align="center">
+			<img src="./resource/image/jquery-logo.png" alt="jQuery Mobile">
+			<h3 class="fs40">jQuery Mobileの紹介</h3>
+			<div data-role="collapsible" data-collapsed="false" data-content-theme="c"> 
+				<h3 class="fs20">PC、スマートフォンに対応したユーザインターフェースフレームワーク</h3>
+				<ol data-role="listview" data-inset="true">
+					<li data-role="list-divider">特徴</li>
+					<li class="fs20">HTMLが分かれば使える</li>
+					<li class="fs20">タッチデバイス向けのUIが簡単に作れる</li>
+					<li class="fs20">
+						広範囲なプラットフォームとの互換性
+						<ul data-role="listview">
+							<li class="fs20">Apple iOS 3.2-5.0</li>
+							<li class="fs20">Android 2.1-2.3、3.1、4.0</li>
+							<li class="fs20">Windows Phone 7-7.5</li>
+							<li class="fs20">Chrome Desktop 11-15、Firefox Desktop 4-8 、Internet Explorer 7-9</li>
+							参考URL:<a href="http://dev.screw-axis.com/doc/jquery_mobile/overview/supported_platforms/">http://dev.screw-axis.com/doc/jquery_mobile/overview/supported_platforms/</a>
+						</ul>
+					</li>
+				</ol>
+				<h3 class="fs20">最新バージョン：1.1.0</h3>
+			</div>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p4" data-role="page">
+	<div data-role="header">
+		<a href="#p3" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p5" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p3">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p5">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs40">jQuery Mobileの使い方</h3>
+		</div>
+		<div align="center">
+			<h3 class="fs30">準備</h3>
+		</div>
+		以下のファイルを読み込む
+<pre>
+&lt;head&gt;
+&lt;!-- jQuery MobileのCSSを読み込む --&gt;
+<span style="color:#00f;">&lt;link rel="stylesheet" href="jquery.mobile.css" /&gt;</span>
+&lt;!-- jQuery本体を読み込む --&gt;
+<span style="color:#00f;">&lt;script src="jquery.js"&gt;&lt;/script&gt;</span>
+&lt;!-- jQuery MobileのJSを読み込む --&gt;
+<span style="color:#00f;">&lt;script src="jquery.mobile.js"&gt;&lt;/script&gt;</span>
+&lt;/head&gt;
+</pre>
+		<div align="center">
+			<h3 class="fs30">ページ構造</h3>
+		</div>
+		ページ要素の中にヘッダー、コンテンツ、フッター要素を入れる<br />
+		複数ページある場合はページ要素タグにidをつける
+<pre>
+&lt;div data-role="page" id="p1"&gt; 
+	&lt;div data-role="header"&gt;...&lt;/div&gt; 
+	&lt;div data-role="content"&gt;
+		&lt;a href="<span style="color:#00f;">#p2</span>"&gt;ページ２へ&lt;/a&gt;
+	&lt;/div&gt; 
+	&lt;div data-role="footer"&gt;...&lt;/div&gt; 
+&lt;/div&gt;
+&lt;div data-role="page" id="p2"&gt; 
+	&lt;div data-role="header"&gt;...&lt;/div&gt; 
+	&lt;div data-role="content"&gt;...&lt;/div&gt; 
+	&lt;div data-role="footer"&gt;...&lt;/div&gt; 
+&lt;/div&gt;
+</pre>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p5" data-role="page">
+	<div data-role="header">
+		<a href="#p4" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p6" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p4">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p6">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs40">こんなUIが作れる</h3>
+		</div>
+		<div align="center">
+			<h3 class="fs30">フォーム</h3>
+		</div>
+		<div align="center">
+<pre>
+&lt;input type=<span style="color:#00f;">"text"</span> name="name" value="" /&gt;
+</pre>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="name">Text:</label>
+			<input type="text" name="name" id="name" value=""  />
+		</div>
+		<div data-role="fieldcontain">
+			<label for="textarea-a">TextArea:</label>
+			<textarea name="textarea" id="textarea-a">テキストエリア</textarea>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="search-basic">SearchInput:</label>
+			<input type="search" name="search" id="search-basic" value="" />
+		</div>
+		<div data-role="fieldcontain">
+			<label for="slider">Input slider:</label>
+			<input type="range" name="slider" id="slider" value="25" min="0" max="100"  />
+		</div>
+		<div data-role="fieldcontain">
+			<label for="flip-b">Flip switch:</label>
+			<select name="slider" id="flip-b" data-role="slider">
+				<option value="no">No</option>
+				<option value="yes">Yes</option>
+			</select> 
+		</div>
+		<div data-role="fieldcontain">
+		<fieldset data-role="controlgroup">
+			<legend>Radio:</legend>
+			<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+			<label for="radio-choice-1">Cat</label>
+			<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+			<label for="radio-choice-2">Dog</label>
+			<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+			<label for="radio-choice-3">Hamster</label>
+		</fieldset>
+		<fieldset data-role="controlgroup" data-type="horizontal" >
+			<legend>Radio:</legend>
+			<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+			<label for="radio-choice-1">Cat</label>
+			<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+			<label for="radio-choice-2">Dog</label>
+			<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+			<label for="radio-choice-3">Hamster</label>
+		</fieldset>
+		</div>
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup">
+			<legend>Checkbox:</legend>
+			<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+			<label for="checkbox-1">I agree</label>
+			</fieldset>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="select-choice-1" class="select">Select:</label>
+			<select name="select-choice-1" id="select-choice-1">
+				<option value="standard">Standard: 7 day</option>
+				<option value="rush">Rush: 3 days</option>
+				<option value="express">Express: next day</option>
+				<option value="overnight">Overnight</option>
+			</select>
+		</div>
+		<div align="center">
+			<h3 class="fs40">ページ遷移のアニメーション</h3>
+		</div>
+		<div align="center">
+<pre>
+&lt;a href="#p2" <span style="color:#00f;">data-rel="dialog"</span> <span style="color:#00f;">data-transition="fade"</span>&gt;ページ２へ&lt;/a&gt;
+</pre>
+		</div>
+		<div align="center">
+		<table>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="fade" data-inline="true">data-transition="fade"</a></td>
+			</tr>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true">data-transition="pop"</a></td>
+			</tr>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="flip" data-inline="true">data-transition="flip"</a></td>
+			</tr>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="turn" data-inline="true">data-transition="turn"</a></td>
+			</tr>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="flow" data-inline="true">data-transition="flow"</a></td>
+			</tr>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="slide" data-inline="true">data-transition="slide"</a></td>
+			</tr>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="slideup" data-inline="true">data-transition="slideup"</a></td>
+			</tr>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="slidedown" data-inline="true">data-transition="slidedown"</a></td>
+			</tr>
+			<tr>
+				<td><a href="#p5-1" data-role="button" data-rel="dialog" data-transition="none" data-inline="true">data-transition="none"</a></td>
+			</tr>
+		</table>
+		</div>
+		書き方は<a href="http://dev.screw-axis.com/doc/jquery_mobile/" target="_blank">http://dev.screw-axis.com/doc/jquery_mobile/</a>
+		<div align="center">
+			<h3 class="fs40">次ページから便利だった機能を紹介</h3>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p5-1" data-role="page">
+	<div data-role="header">
+		<h1>jQuery Mobileを触ってみた</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+		テスト
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p6" data-role="page">
+	<div data-role="header">
+		<a href="#p5" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p7" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p5">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p7">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs40">ヘッダーフッダー</h3>
+		</div>
+		<div align="center">
+			<h3 class="fs30">ヘッダー構造</h3>
+		</div>
+		<div data-role="header">
+			<a href="./" data-icon="delete">削除</a>
+			<h1>ヘッダー</h1>
+			<a href="./" data-icon="check">保存</a>
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#" data-icon="star" class="ui-btn-active">トップ</a></li>
+					<li><a href="#" data-icon="grid">ランキング</a></li>
+					<li><a href="#" data-icon="home">MYページ</a></li>
+					<li><a href="#" data-icon="gear">設定</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+<pre>
+&lt;div <span style="color:#00f;">data-role="header"</span>&gt;
+	&lt;a href="./" data-icon="delete"&gt;削除&lt;/a&gt;
+	&lt;h1&gt;ヘッダー&lt;/h1&gt;
+	&lt;a href="./" data-icon="check"&gt;保存&lt;/a&gt;
+	&lt;div <span style="color:#00f;">data-role="navbar"</span> data-iconpos="top"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="star" class="ui-btn-active"&gt;トップ&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="grid"&gt;ランキング&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="home"&gt;MYページ&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="gear"&gt;設定&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		ナビが6つ以上になると２分割されます
+		<div data-role="header">
+			<a href="./" data-icon="delete">削除</a>
+			<h1>ヘッダー</h1>
+			<a href="./" data-icon="check">保存</a>
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#" data-icon="star" class="ui-btn-active">トップ</a></li>
+					<li><a href="#" data-icon="grid">ランキング</a></li>
+					<li><a href="#" data-icon="home">MYページ</a></li>
+					<li><a href="#" data-icon="star">トップ</a></li>
+					<li><a href="#" data-icon="grid">ランキング</a></li>
+					<li><a href="#" data-icon="home">MYページ</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+		<div align="center">
+			<h3 class="fs30">フッター構造</h3>
+		</div>
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#" data-icon="star" class="ui-btn-active">トップ</a></li>
+					<li><a href="#" data-icon="grid">ランキング</a></li>
+					<li><a href="#" data-icon="home">MYページ</a></li>
+					<li><a href="#" data-icon="gear">設定</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+<pre>
+&lt;-- data-position="fixed"を付けると固定される(headerも同様) --&gt;
+&lt;div <span style="color:#00f;">data-role="footer"</span>&gt;
+	&lt;div <span style="color:#00f;">data-role="navbar"</span> data-iconpos="bottom"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="star" class="ui-btn-active"&gt;トップ&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="grid"&gt;ランキング&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="home"&gt;MYページ&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="gear"&gt;設定&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div align="center">
+			<h3 class="fs30">フルスクリーンモード</h3>
+		</div>
+		ページをタップするとツールバーの表示/非表示が切り替わる
+<pre>
+&lt;div &gt;data-role="page" <span style="color:#00f;">data-fullscreen="true"</span>&gt;
+&lt;/div&gt;
+</pre>
+	<a href="#p6-1">試してみる</a>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p6-1" data-role="page" data-fullscreen="true">
+	<div data-role="header" data-position="fixed">
+		<h1>jQuery Mobileを触ってみた</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+		<div align="center">
+			<h3 class="fs40">ヘッダーフッダー</h3>
+		</div>
+		<div align="center">
+			<h3 class="fs30">ヘッダー構造</h3>
+		</div>
+		<div data-role="header">
+			<a href="./" data-icon="delete">削除</a>
+			<h1>ヘッダー</h1>
+			<a href="./" data-icon="check">保存</a>
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#" data-icon="star" class="ui-btn-active">トップ</a></li>
+					<li><a href="#" data-icon="grid">ランキング</a></li>
+					<li><a href="#" data-icon="home">MYページ</a></li>
+					<li><a href="#" data-icon="gear">設定</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+<pre>
+&lt;div <span style="color:#00f;">data-role="header"</span>&gt;
+	&lt;a href="./" data-icon="delete"&gt;削除&lt;/a&gt;
+	&lt;h1&gt;ヘッダー&lt;/h1&gt;
+	&lt;a href="./" data-icon="check"&gt;保存&lt;/a&gt;
+	&lt;div <span style="color:#00f;">data-role="navbar"</span> data-iconpos="top"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="star" class="ui-btn-active"&gt;トップ&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="grid"&gt;ランキング&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="home"&gt;MYページ&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="gear"&gt;設定&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div align="center">
+			<h3 class="fs30">フッター構造</h3>
+		</div>
+		<div data-role="footer">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#" data-icon="star" class="ui-btn-active">トップ</a></li>
+					<li><a href="#" data-icon="grid">ランキング</a></li>
+					<li><a href="#" data-icon="home">MYページ</a></li>
+					<li><a href="#" data-icon="gear">設定</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+<pre>
+&lt;-- data-position="fixed"を付けると固定される --&gt;
+&lt;div <span style="color:#00f;">data-role="footer"</span> <span style="color:#00f;">data-id="myfooter"</span>&gt;
+	&lt;div <span style="color:#00f;">data-role="navbar"</span> data-iconpos="bottom"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="star" class="ui-btn-active"&gt;トップ&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="grid"&gt;ランキング&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="home"&gt;MYページ&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#" data-icon="gear"&gt;設定&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div align="center">
+			<h3 class="fs30">フルスクリーンモード</h3>
+		</div>
+		ページをタップするとツールバーの表示/非表示が切り替わる
+<pre>
+&lt;div &gt;data-role="page" <span style="color:#00f;">data-fullscreen="true"</span>&gt;
+&lt;/div&gt;
+</pre>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h1><a href="https://twitter.com/#!/boss_sato" target="_blank" style="color:#FFFFFF; font-size:60px"><img src="resource/image/ushi_normal.png" style="padding-right:10px;">Follow Me!</a></h1>
+	</div>
+</div><!-- /page -->
+
+<div id="p7" data-role="page">
+	<div data-role="header">
+		<a href="#p6" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p8" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p6">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p8">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs30">開閉式コンテンツ</h3>
+		</div>
+<pre>
+&lt;-- data-collapsed="false"を付けると最初から開いた状態になる --&gt;
+&lt;div <span style="color:#00f;">data-role="collapsible"</span>&gt;
+	&lt;h3&gt;ヘッダ&lt;/h3&gt;
+	&lt;p&gt;ここがコンテンツ部分です。初期状態では表示されており、ヘッダがクリックされると非表示になります。&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+		<div data-role="collapsible" data-collapsed="false" data-theme="e" data-content-theme="c">
+			<h3>ヘッダ</h3>
+			<p>ここがコンテンツ部分です。初期状態では表示されており、ヘッダがクリックされると非表示になります。</p>
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+				<h3>入れ子も出来ます</h3>
+				<p>入れ子も出来ます</p>
+			</div>
+		</div>
+		<div align="center">
+			<h3 class="fs30">アコーディオン式コンテンツ</h3>
+		</div>
+		開閉式コンテンツがセットになったもの
+<pre>
+&lt;div <span style="color:#00f;">data-role="collapsible-set"</span>&gt;
+	&lt;div <span style="color:#00f;">data-role="collapsible"</span>&gt;
+		&lt;h3&gt;ヘッダ&lt;/h3&gt;
+		&lt;p&gt;ここがコンテンツ部分です。初期状態では表示されており、ヘッダがクリックされると非表示になります。&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div <span style="color:#00f;">data-role="collapsible"</span>&gt;
+		&lt;h3&gt;ヘッダ&lt;/h3&gt;
+		&lt;p&gt;ここがコンテンツ部分です。初期状態では表示されており、ヘッダがクリックされると非表示になります。&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="false">
+				<h3>セクション1</h3>
+				<p>セクション1のコンテンツ</p>
+			</div>
+			<div data-role="collapsible">
+				<h3>セクション2</h3>
+				<p>セクション2のコンテンツ</p>
+			</div>
+			<div data-role="collapsible">
+				<h3>セクション3</h3>
+				<p>セクション3のコンテンツ</p>
+			</div>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p8" data-role="page">
+	<div data-role="header">
+		<a href="#p7" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p9" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p7">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p9">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs30">リストビュー</h3>
+		</div>
+<pre>
+&lt;ul <span style="color:#00f;">data-role="listview"</span>&gt;
+	&lt;li data-role="list-divider" role="heading"&gt;Menu&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Acura&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Audi&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;BMW&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+		<br />
+		<ul data-role="listview">
+			<li data-role="list-divider" role="heading">Menu</li>
+			<li><a href="#">Acura</a></li>
+			<li><a href="#">Audi</a></li>
+			<li><a href="#">BMW</a></li>
+		</ul>
+		<br />
+		<h3 class="fs20">data-inset="true"つけるとインセットモードになります。</h3>
+		<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider" role="heading">Menu</li>
+			<li><a href="#">Acura</a></li>
+			<li><a href="#">Audi</a></li>
+			<li><a href="#">BMW</a></li>
+		</ul>
+		<br />
+		<h3 class="fs20">data-filter="true"つけるとフィルターモードになります。</h3>
+		<ul data-role="listview" data-inset="true" data-filter="true">
+			<li data-role="list-divider" role="heading">Menu</li>
+			<li><a href="#">Acura</a></li>
+			<li><a href="#">Audi</a></li>
+			<li><a href="#">BMW</a></li>
+			<li><a href="#">Cadillac</a></li>
+			<li><a href="#">Chrysler</a></li>
+			<li><a href="#">Dodge</a></li>
+			<li><a href="#">Ferrari</a></li>
+			<li><a href="#">Ford</a></li>
+			<li><a href="#">GMC</a></li>
+			<li><a href="#">Honda</a></li>
+			<li><a href="#">Hyundai</a></li>
+			<li><a href="#">Infiniti</a></li>
+			<li><a href="#">Jeep</a></li>
+			<li><a href="#">Kia</a></li>
+			<li><a href="#">Lexus</a></li>
+			<li><a href="#">Mini</a></li>
+			<li><a href="#">Nissan</a></li>
+			<li><a href="#">Porsche</a></li>
+			<li><a href="#">Subaru</a></li>
+			<li><a href="#">Toyota</a></li>
+			<li><a href="#">Volkswagon</a></li>
+			<li><a href="#">Volvo</a></li>
+	</ul>
+	他にもいろいろあるので<a href="http://dev.screw-axis.com/doc/jquery_mobile/components/lists/docs/" target="_blank">こちら</a>を参考に
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p9" data-role="page">
+	<div data-role="header">
+		<a href="#p8" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p10" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p8">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p10">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs30">テーマシステム</h3>
+		</div>
+		<div data-role="collapsible" data-collapsed="false" data-content-theme="c"> 
+<pre>
+&lt;!-- テーマは5種類 --&gt;
+&lt;!-- 要素ごとにテーマを指定出来る --&gt;
+&lt;div data-role="header" <span style="color:#00f;">data-theme="a"</span>&gt;
+	&lt;h1&gt;header&lt;/h1&gt;
+&lt;/div&gt;
+</pre>
+			<div data-role="header" data-theme="a">
+				<h1>theme a</h1>
+			</div>
+			<div data-role="header" data-theme="b">
+				<h1>theme b</h1>
+			</div>
+			<div data-role="header" data-theme="c">
+				<h1>theme c</h1>
+			</div>
+			<div data-role="header" data-theme="d">
+				<h1>theme d</h1>
+			</div>
+			<div data-role="header" data-theme="e">
+				<h1>theme e</h1>
+			</div>
+			<h3 class="fs20">各要素の色やフォント等のスタイル設定を管理する</h3>
+			<ol data-role="listview" data-inset="true">
+				<li data-role="list-divider">特徴</li>
+				<li class="fs20">画像ではなくCSS3を用いて角丸、影落としなどを実装しているのでサーバ負荷を軽減出来る</li>
+				<li class="fs20">アイコンなどの画像はCSSスプライトを用いているので軽い</li>
+			</ol>
+
+		</div>
+		<div align="center">
+			<h3 class="fs30">ThemeRoller</h3>
+		</div>
+		<div data-role="collapsible" data-collapsed="false" data-content-theme="c"> 
+			<h3 class="fs20">独自テーマを簡単に作れるツール</h3>
+			<div align="center"><a href="http://jquerymobile.com/themeroller/" target="_blank"><img src="./resource/image/themroller-mobile-logo.png" alt="ThemeRoller" /></a></div>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p10" data-role="page">
+	<div data-role="header">
+		<a href="#p9" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p11" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p9">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p11">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs30">プリフェッチ</h3>
+		</div>
+		<div data-role="collapsible" data-collapsed="false" data-content-theme="c"> 
+			<h3 class="fs20">他のページを事前読込して高速に遷移出来る機能</h3>
+<pre>
+&lt;a href="next.html" data-prefetch&gt; ... &lt;/a&gt;
+</pre>
+			<ol data-role="listview" data-inset="true">
+				<li class="fs20">複数の単一ページテンプレートで作っている前提</li>
+				<li class="fs20">ユーザーに追加でHTTPリクエストがかかるので高確率でそのページに遷移する箇所に設定すべき<br />例)前へ次へのスライドとか</li>
+			</ol>
+		</div>
+		<div align="center">
+			<h3 class="fs30">DOMキャッシュ</h3>
+		</div>
+		<div data-role="collapsible" data-collapsed="false" data-content-theme="c"> 
+			<h3 class="fs20">DOM上にキャッシュを残して再度ページにアクセスした際に高速に表示させる機能</h3>
+<pre>
+&lt;div data-role="page" data-dom-cache="true"&gt;
+</pre>
+			<ol data-role="listview" data-inset="true">
+				<li class="fs20">DOMキャッシュによってメモリ圧迫があるかもなのでスマートフォンでは幅広い端末でテストしたほうがよい</li>
+			</ol>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p11" data-role="page">
+	<div data-role="header">
+		<a href="#p10" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p12" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p10">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p12">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs30">プラグイン</h3>
+		</div>
+		<ul data-role="listview" data-inset="true">
+			<li><a href="http://dev.screw-axis.com/doc/jquery_mobile/resources/plugins/" target="_blank">今の所、公式では4つ</a></li>
+			<li><a href="http://dev.screw-axis.com/doc/jquery_mobile/resources/plugins/pagination/" target="_blank">このスライドはpaginationプラグインを使ってます</a></li>
+		</ul>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p12" data-role="page">
+	<div data-role="header">
+		<a href="#p11" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p13" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p11">Prev</a></li>
+			<li class="ui-pagination-next"><a href="#p13">Next</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs30">Tipsや注意点など</h3>
+		</div>
+		<div data-role="collapsible" data-collapsed="false" data-content-theme="b"> 
+			<h3 class="fs20">UIについて</h3>
+			<div data-role="collapsible" data-collapsed="false" data-content-theme="b"> 
+				<h3 class="fs20">jQueryMobileはあくまでUIフレームワーク</h3>
+				<ol data-role="listview" data-inset="true">
+					<li class="fs20">リッチな表示(カルーセルとか)が出来ると勘違いされやすい</li>
+					<li class="fs20">JSプラグインで追加することも出来る</li>
+				</ol>
+			</div>
+			<div data-role="collapsible" data-collapsed="false" data-content-theme="b"> 
+				<h3 class="fs20">jQueryMobileのUI(CSS)をいじるのはそれなりに大変</h3>
+				<ol data-role="listview" data-inset="true">
+					<li class="fs20">あるパーツを変更したいだけなのに他のパーツまで変更されてしまうことがある(ヘッダーのCSS変更するとリストヘッダーまで変わるなど)</li>
+					<li class="fs20">パーツごとにID付ける、それようのテーマを作るなどの対応が必要になってくる</li>
+					<li class="fs20">早めの段階でこういうUIまでがjQueryMobileで出来る、それ以上のことをやる場合は追加になるという調整をした方が後々幸せになれるよきっと</li>
+				</ol>
+			</div>
+		</div>
+		<div data-role="collapsible" data-collapsed="false" data-content-theme="b"> 
+			<h3 class="fs20">Androidについて</h3>
+			<div data-role="collapsible" data-collapsed="false" data-content-theme="b"> 
+				<h3 class="fs20">挙動がちょっと不安定かもしれない。。</h3>
+				<ol data-role="listview" data-inset="true">
+					<li class="fs20">Ajax処理、アニメーション処理が端末によって挙動が不安定(感覚的には端末依存問題な気がする)</li>
+					<li class="fs20">Android OSの幅広いバージョンがサポートされていても端末依存の問題はさけられない(jQuery Mobileに限らず)</li>
+					<li class="fs20">早めの段階でAndroidの挙動に対して調整をした方が後々幸せに(ry</li>
+				</ol>
+			</div>
+		</div>
+		<div data-role="collapsible" data-collapsed="false" data-content-theme="b"> 
+			<h3 class="fs20">Ajaxについて</h3>
+			<div data-role="collapsible" data-collapsed="false"> 
+				<h3 class="fs20">Ajaxによって処理が重たいと言われてる</h3>
+				<ol data-role="listview" data-inset="true">
+					<li class="fs20">Ajax処理自体を無効にする流れが出来てます</li>
+<pre>
+&lt;script language="JavaScript"&gt;
+	$.mobile.ajaxEnabled = false;
+&lt;/script&gt;
+</pre>
+					<li class="fs20"><a href="http://d.hatena.ne.jp/pikotea/20120405/1333631161" target="_blank">そんなあなたに読んでいただきたい記事が</a></li>
+					<li class="fs20">ページ表示が重いという時は以下も合わせて確認した方がよいと思います</li>
+<pre>
+CSS、JSの順に外部ファイルを読み込む
+CSSで@importを使用しない
+アイコンやボタン等の画像でCSSスプライトを用いる
+CSS、JSは圧縮する
+</pre>
+				</ol>
+			</div>
+		</div>
+		<div align="center">
+			<h3 class="fs30">Ajax無効はせっかくのjQueryMobileの機能を削ることになるので逃げちゃダメ</h3>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="p13" data-role="page">
+	<div data-role="header">
+		<a href="#p11" data-role="button" class="ui-btn-left" data-iconpos="left" data-icon="arrow-l" id="left">Prev</a>
+		<h1>jQuery Mobileを触ってみた</h1>
+		<a href="#p13" data-role="button" class="ui-btn-right" data-iconpos="right" data-icon="arrow-r" id="next">Next</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<ul data-role="pagination">
+			<li class="ui-pagination-prev"><a href="#p12">Prev</a></li>
+		</ul>
+		<div align="center">
+			<h3 class="fs30">おしまい</h3>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h1>2012/06/04</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
