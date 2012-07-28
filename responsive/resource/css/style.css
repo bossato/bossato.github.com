@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* clearfix */
+
+.clearfix {zoom:1;}
+.clearfix:before, .clearfix:after {content:""; display:table;}
+.clearfix:after {clear:both;}
+
+/* init */
+
+body {
+  width: 100%;
+  margin: 1em 0;
+  color: #222;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em;
+  line-height: 1.1;
+  font-family: "Hiragino Mincho Pro", "Hiragino Mincho ProN", serif;
+  letter-spacing: -1px;
+}
+p {
+  margin: 0 0 1em;
+  line-height: 1.4;
+  color: #333;
+  text-align: justify;
+  word-break: break-all;
+}
+ul {
+  margin: 0 0 2em;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* base */
+
+#wrapper {
+  margin: 0;
+}
+header {
+  padding-left: 6%;
+}
+nav {
+  margin: 0;
+}
+#common-contents {
+  width: 88%;
+  margin: 2em auto 1em;
+}
+article.main {
+  width: 100%;
+}
+section {
+  margin: 0 0 2em;
+}
+aside.side {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+/* style */
+
+header h1 {
+  font-size: 2.3em;
+  margin: 0 0 0.2em;
+}
+p.tagline {
+  font-size: 0.9em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #555;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+nav ul li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  line-height: 2.5em;
+  color: #fff;
+  border-bottom: 1px solid #333;
+}
+.main h1 {
+ font-size: 2em;
+}
+article.main h2 {
+  font-size: 1.6em;
+  margin-top: 1.3em;
+}
+aside.side h1 {
+  font-size: 1.3em;
+  color: #333;
+  border-bottom: 1px dotted #333;
+}
+aside.side ul li {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+small {
+  text-transform: uppercase;
+}
+
+/* smartphone */
+
+@media only screen and (min-width: 481px) {
+nav {
+  margin: 0;
+  padding: 0 0 0 6%;
+  background-color: #000;
+}
+nav ul {
+  padding: 1px 0;
+}
+nav ul li {
+  float: left;
+  width: 100px;
+  margin: 0;
+  text-align: center;
+  line-height: 2.5em;
+  border-left: 1px solid #333;
+  border-right: 1px solid #222;
+  border-bottom: none;
+}
+#sidebar1 {
+  width: 47%;
+  padding-right: 3%;
+  float: left;
+}
+#sidebar2 {
+  width: 47%;
+  padding-right: 3%;
+  float: right;
+}
+}
+
+/* desctop */
+
+@media only screen and (min-width: 769px) {
+article.main {
+  width: 64%;
+  float: left;
+}
+aside.side {
+  width: 30%;
+  float: right;
+}
+aside.side ul li {
+  font-size: 1em;
+}
+#sidebar1, #sidebar2 {
+  width: 100%;
+  pading: 0;
+  float: none;
+}
+}
